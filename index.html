@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div class="parent-div">
+        <div class="box">
+            <h2 class="title">Kalkulator BMI</h2>
+            <div class="content">
+                <div class="radio-form">
+                    <div>
+                        <input type="radio" id="pria" name="gender" value="pria"
+                               checked>
+                        <label for="pria">Pria</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="wanita" name="gender" value="wanita">
+                        <label for="wanita">Wanita</label>
+                      </div>
+                </div>
+    
+                <div class="age-container">
+                    <h3>Umur: <span id="age-value">10</span> tahun</h3>
+                    <input type="range" id="ageRange" min="5" max="100">
+                </div>
+    
+                <div class="grid-container">
+                    <div class="weight-container">
+                        <h3>Berat Badan: <span id="weight-value">10</span> kg</h3>
+                        <input type="range" id="weightRange" min="10" max="150">
+                    </div>
+        
+                    <div class="height-container">
+                        <h3>Tinggi: <span id="height-value">10</span> cm</h3>
+                        <input type="range" id="heightRange" min="10" max="250">
+                    </div>
+                </div>
+                <div class="grid-button">
+                    <button class="calculate" id="submit" onclick=countBMI();>Hitung BMI</button>
+                </div> 
+                <div class="result">
+                    <h2 id="bmi-result"></h2>
+                    <h3 id="result-title"></h3>
+                </div>     
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

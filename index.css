@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #125488;
+}
+.title {
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;  
+}
+.box {
+    width: 500px;
+    background: #fafafa;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+}
+.content {
+    padding: 0 30px;
+}
+.radio-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.radio-form label{
+    font-size: 18px;
+}
+input[type=radio]{
+    accent-color: #2a93d5;
+}
+input[type=range]{
+    accent-color: #2a93d5;
+}
+.age-container {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.age-container h3 {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+.age-container input {
+    width: 30%;
+    text-align: center;
+}
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weight-container {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    width: 45%;
+}
+.weight-container h3 {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+.weight-container input {
+    width: 50%;
+    text-align: center;
+}
+.height-container {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    width: 45%;
+}
+.height-container h3 {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+.height-container input {
+    width: 50%;
+    text-align: center;
+}
+.grid-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.calculate {
+    cursor: pointer;
+    color: #fff;
+    background: #2a93d5;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+    margin: 20px 0;
+    margin-right: 10px;
+}
+button.calculate:hover {
+    background: #125488;
+}
+.result h2{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 36px;
+    transition: all 0.5s;
+}
+.result h3{
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    transition: all 0.5s;
+}
